@@ -1,0 +1,84 @@
+/**
+ * Profile & Academic Identity Data
+ * Muhammad Nawaz Sharif - Lecturer in Physics
+ * Govt. Boys Inter College Gamba, Skardu, Gilgit-Baltistan
+ */
+
+export const profileData = {
+  name: "Muhammad Nawaz Sharif",
+  title: "Lecturer in Physics",
+  badge: "PHYSICS EDUCATOR • LECTURER • MENTOR",
+  tagline: "Teaching Physics with Clarity, Curiosity & Purpose.",
+  statement: "Making Physics understandable, visual, intuitive, and inspiring for the next generation of learners.",
+  
+  institution: {
+    name: "Govt. Boys Inter College Gamba",
+    city: "Skardu",
+    region: "Gilgit-Baltistan",
+    country: "Pakistan",
+    department: "Department of Physics"
+  },
+
+  about: {
+    lead: "Dedicated physics educator committed to conceptual understanding, Student Learning Outcomes (SLOs), and scientific problem-solving in Gilgit-Baltistan.",
+    paragraphs: [
+      "Muhammad Nawaz Sharif serves as a Lecturer in Physics at Govt. Boys Inter College Gamba, Skardu, Gilgit-Baltistan, Pakistan. With a passion for demystifying complex physical principles, he empowers intermediate and college students to see the beauty and logic of the universe through structured reasoning, intuitive illustrations, and rigorous mathematical formulation.",
+      "His educational approach emphasizes moving away from rote memorization toward deep conceptual mastery, visual problem-solving, and comprehensive handwritten study material aligned with modern national curriculum standards and board requirements."
+    ],
+    journey: [
+      { step: "Teaching", description: "Delivering engaging lectures in classical mechanics, thermodynamics, electromagnetism, and modern physics." },
+      { step: "Mentoring", description: "Guiding students through academic challenges, numerical mastery, and board examination excellence." },
+      { step: "Creating", description: "Authoring high-clarity handwritten notes, derivation guides, and visual physics illustrations." },
+      { step: "Inspiring", description: "Cultivating scientific curiosity and rational inquiry among young scholars across Skardu and beyond." }
+    ]
+  },
+
+  philosophy: [
+    {
+      id: "conceptual",
+      title: "Conceptual Understanding",
+      tag: "Core Principle",
+      icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>`,
+      description: "Physics should be understood rather than memorized. Students learn the foundational why behind every physical phenomenon before applying formulas."
+    },
+    {
+      id: "mathematical",
+      title: "Mathematical Reasoning",
+      tag: "Analytical Rigor",
+      icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 12h8M12 8v8"/></svg>`,
+      description: "Mathematics is the language of nature. We emphasize how equations tell physical stories, transforming abstract calculus and algebra into tangible insights."
+    },
+    {
+      id: "visual",
+      title: "Visual Learning",
+      tag: "Intuitive Grasp",
+      icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12a4 4 0 0 1 8 0M12 8v8"/></svg>`,
+      description: "Diagrams, vector sketches, interactive simulations, and real-time demonstrations make invisible fields, forces, and orbits clear and memorable."
+    },
+    {
+      id: "problem-solving",
+      title: "Problem Solving",
+      tag: "Critical Thinking",
+      icon: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>`,
+      description: "Equipping students with systematic problem-solving frameworks to analyze, decompose, and solve complex multi-step physics numericals with confidence."
+    }
+  ],
+
+  highlights: [
+    { label: "Designation", value: "Lecturer in Physics", isPlaceholder: false },
+    { label: "Institution", value: "Govt. Boys Inter College Gamba", isPlaceholder: false },
+    { label: "Location", value: "Skardu, Gilgit-Baltistan", isPlaceholder: false },
+    { label: "Curriculum Focus", value: "Intermediate (1st & 2nd Year) Physics", isPlaceholder: false }
+  ],
+
+  social: {
+    facebook: "https://www.facebook.com/nawaz.sharif.79/",
+    facebookName: "Muhammad Nawaz Sharif"
+  },
+
+  academicCredentialsPlaceholder: [
+    { label: "Master's Degree", value: "[Add verified qualification here]", isPlaceholder: true },
+    { label: "Specialization", value: "[Add verified specialization here]", isPlaceholder: true },
+    { label: "Professional Certifications", value: "[Add verified certifications here]", isPlaceholder: true }
+  ]
+};

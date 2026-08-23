@@ -1,0 +1,213 @@
+/**
+ * Responsive Styles & Breakpoints
+ * Muhammad Nawaz Sharif - Academic Portfolio
+ */
+
+/* Mobile Menu Drawer */
+.mobile-nav-toggle {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  border: 1px solid var(--border-medium);
+  color: var(--text-primary);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.mobile-menu-drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: min(340px, 85vw);
+  height: 100vh;
+  background: var(--bg-secondary);
+  border-left: 1px solid var(--border-medium);
+  box-shadow: var(--shadow-lg);
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  padding: calc(var(--header-height) + 1.5rem) 2rem 2rem 2rem;
+  transition: right var(--transition-normal);
+  backdrop-filter: blur(20px);
+}
+
+.mobile-menu-drawer.active {
+  right: 0;
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+.mobile-nav-link {
+  font-family: var(--font-heading);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+  color: var(--accent-cyan);
+}
+
+/* ==========================================================================
+   Breakpoints
+   ========================================================================== */
+
+/* Large Desktop (1440px - 1920px+) */
+@media (min-width: 1440px) {
+  .hero-section {
+    padding-top: calc(var(--header-height) + 4rem);
+    padding-bottom: 6rem;
+  }
+  .orbital-system {
+    width: 480px;
+    height: 480px;
+  }
+}
+
+/* Tablet / Medium Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+    text-align: center;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero-subtitle {
+    justify-content: center;
+  }
+
+  .hero-statement {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-highlights {
+    justify-content: center;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+}
+
+/* Small Tablet / Large Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-highlights {
+    flex-direction: column;
+    gap: var(--space-4);
+    align-items: center;
+  }
+
+  .lab-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lab-canvas-container {
+    border-right: none;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .modal-container {
+    max-height: 95vh;
+  }
+
+  .modal-body {
+    padding: var(--space-4);
+  }
+
+  .toast-container {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+  }
+
+  .toast {
+    width: 100%;
+  }
+}
+
+/* Mobile Devices (320px - 425px) */
+@media (max-width: 425px) {
+  :root {
+    --header-height: 68px;
+  }
+
+  .brand-logo-text .tag {
+    display: none;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .orbital-system {
+    width: 290px;
+    height: 290px;
+  }
+
+  .profile-frame {
+    width: 175px;
+    height: 175px;
+  }
+
+  .floating-equation {
+    font-size: 0.65rem;
+    padding: 4px 8px;
+  }
+}
+
+/* Touch Device Target Optimization */
+@media (hover: none) and (pointer: coarse) {
+  .btn,
+  .nav-link,
+  .mobile-nav-link,
+  .lab-tab-btn {
+    min-height: 44px;
+  }
+}
