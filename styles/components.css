@@ -64,35 +64,41 @@
 .brand-logo-text {
   display: flex;
   flex-direction: column;
-  line-height: 1.1;
+  line-height: 1.15;
 }
 
 .brand-logo-text .name {
   font-size: var(--text-base);
   font-weight: 700;
   color: var(--text-primary);
+  white-space: nowrap;
 }
 
 .brand-logo-text .tag {
   font-family: var(--font-mono);
-  font-size: 0.6875rem;
+  font-size: 0.625rem;
   color: var(--accent-cyan);
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
+  /* Tagline hidden — removed per design update */
+  display: none;
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
-  gap: var(--space-6);
+  gap: clamp(0.75rem, 1.5vw, 1.5rem);
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 .nav-link {
-  font-size: var(--text-sm);
+  font-size: clamp(0.7rem, 1vw, var(--text-sm));
   font-weight: 500;
   color: var(--text-secondary);
   position: relative;
   padding: var(--space-2) 0;
+  white-space: nowrap;
   transition: color var(--transition-fast);
 }
 
@@ -131,10 +137,10 @@
   align-items: center;
   justify-content: center;
   gap: var(--space-2);
-  padding: 0.75rem 1.6rem;
+  padding: clamp(0.625rem, 1.5vw, 0.75rem) clamp(1rem, 2.5vw, 1.6rem);
   border-radius: var(--radius-md);
   font-family: var(--font-heading);
-  font-size: var(--text-sm);
+  font-size: clamp(0.8125rem, 1.2vw, var(--text-sm));
   font-weight: 600;
   letter-spacing: 0.01em;
   text-decoration: none;
@@ -143,6 +149,8 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  min-height: 44px; /* WCAG touch target */
+  flex-shrink: 0;
 }
 
 .btn-primary {
