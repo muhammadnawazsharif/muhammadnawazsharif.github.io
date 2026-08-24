@@ -1,8 +1,8 @@
 /**
  * Design Tokens & Theme Variables
  * Muhammad Nawaz Sharif - Academic Portfolio
- * Luxury Academic Minimalism + Scientific Precision
- * Production Domain: https://muhammadnawazsharif.github.io/
+ * Luxury Academic Minimalism + Butter Cream Light Mode + Scientific Precision
+ * Domain: https://muhammadnawazsharif.github.io/
  */
 
 :root {
@@ -96,45 +96,45 @@
 }
 
 /* ========================================================================
-   Light Theme - Elite Academic Luxury (Stanford / MIT / Oxford Faculty Aesthetic)
+   Light Theme - Luxury Butter Academic Aesthetic (Warm Butter Parchment & Rich Amber)
    ======================================================================== */
 [data-theme="light"] {
-  --bg-primary: #f8fafc;
-  --bg-secondary: #f1f5f9;
-  --bg-tertiary: #e2e8f0;
-  --bg-elevated: #ffffff;
-  --bg-surface-glass: rgba(255, 255, 255, 0.88);
-  --bg-card: #ffffff;
+  --bg-primary: #fbf7ec;       /* Warm Rich Butter Tone */
+  --bg-secondary: #f4ede0;     /* Cream Butter Linen for alternating sections */
+  --bg-tertiary: #ebe1cd;      /* Warm Golden Butter for inputs & badges */
+  --bg-elevated: #fffefb;      /* Pure Butter White for cards & dropdowns */
+  --bg-surface-glass: rgba(251, 247, 236, 0.90);
+  --bg-card: #fffdf8;          /* Crisp Butter-White Card */
   --bg-card-hover: #ffffff;
 
-  --border-subtle: rgba(15, 23, 42, 0.08);
-  --border-medium: rgba(15, 23, 42, 0.14);
-  --border-focus: #0284c7;
-  --border-glass: rgba(2, 132, 199, 0.28);
+  --border-subtle: rgba(180, 140, 50, 0.16);
+  --border-medium: rgba(180, 140, 50, 0.28);
+  --border-focus: #d97706;     /* Rich Amber Gold */
+  --border-glass: rgba(217, 119, 6, 0.32);
 
-  --text-primary: #0f172a;
-  --text-secondary: #334155;
-  --text-muted: #64748b;
-  --text-accent: #0284c7;
+  --text-primary: #1c1917;     /* Deep Slate-Espresso (100% WCAG AAA contrast) */
+  --text-secondary: #44403c;   /* Charcoal Warm Stone */
+  --text-muted: #78716c;       /* Muted Stone */
+  --text-accent: #0369a1;      /* Deep Academic Sapphire */
 
   --accent-electric: #1d4ed8;
   --accent-cyan: #0284c7;
-  --accent-cyan-glow: rgba(2, 132, 199, 0.2);
-  --accent-blue-glow: rgba(29, 78, 216, 0.2);
-  --accent-gold: #b45309;
-  --accent-gold-glow: rgba(180, 83, 9, 0.15);
+  --accent-cyan-glow: rgba(2, 132, 199, 0.18);
+  --accent-blue-glow: rgba(29, 78, 216, 0.18);
+  --accent-gold: #b45309;      /* Warm Golden Amber */
+  --accent-gold-glow: rgba(217, 119, 6, 0.22);
   --accent-emerald: #047857;
   --accent-purple: #7e22ce;
 
   --gradient-brand: linear-gradient(135deg, #1d4ed8 0%, #0284c7 100%);
-  --gradient-gold: linear-gradient(135deg, #b45309 0%, #d97706 100%);
-  --gradient-glow: radial-gradient(circle, rgba(2, 132, 199, 0.1) 0%, rgba(29, 78, 216, 0.04) 50%, transparent 80%);
-  --gradient-card: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
-  --gradient-text: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0284c7 100%);
+  --gradient-gold: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
+  --gradient-glow: radial-gradient(circle, rgba(245, 158, 11, 0.14) 0%, rgba(2, 132, 199, 0.04) 50%, transparent 80%);
+  --gradient-card: linear-gradient(145deg, #fffdf8 0%, #f7f0e3 100%);
+  --gradient-text: linear-gradient(135deg, #1c1917 0%, #292524 50%, #0369a1 100%);
 
-  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.05), 0 0 0 1px rgba(15, 23, 42, 0.04);
-  --shadow-md: 0 8px 24px -4px rgba(15, 23, 42, 0.08), 0 0 0 1px rgba(15, 23, 42, 0.05);
-  --shadow-lg: 0 20px 40px -8px rgba(15, 23, 42, 0.12), 0 0 0 1px rgba(15, 23, 42, 0.06);
-  --shadow-glow: 0 0 24px rgba(2, 132, 199, 0.15);
-  --shadow-glow-strong: 0 0 32px rgba(29, 78, 216, 0.2);
+  --shadow-sm: 0 2px 8px rgba(120, 80, 20, 0.06), 0 0 0 1px rgba(180, 140, 50, 0.1);
+  --shadow-md: 0 8px 24px -4px rgba(120, 80, 20, 0.08), 0 0 0 1px rgba(180, 140, 50, 0.14);
+  --shadow-lg: 0 20px 40px -8px rgba(120, 80, 20, 0.12), 0 0 0 1px rgba(180, 140, 50, 0.18);
+  --shadow-glow: 0 0 24px rgba(245, 158, 11, 0.22);
+  --shadow-glow-strong: 0 0 32px rgba(217, 119, 6, 0.28);
 }

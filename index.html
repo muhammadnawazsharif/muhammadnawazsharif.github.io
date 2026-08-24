@@ -111,6 +111,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
 
+  <!-- Instant Zero-Flicker Theme Detection -->
+  <script>
+    (function() {
+      try {
+        var savedTheme = localStorage.getItem('mns_theme') || 'dark';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } catch (e) {}
+    })();
+  </script>
+
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./styles/design-tokens.css" />
   <link rel="stylesheet" href="./styles/base.css" />
