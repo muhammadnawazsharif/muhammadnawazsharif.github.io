@@ -44,16 +44,28 @@
   <meta name="twitter:description" content="Making Physics understandable, visual, intuitive, and inspiring for the next generation of learners." />
   <meta name="twitter:image" content="https://muhammadnawazsharif.github.io/assets/images/notes/note_gravitation_intro.png" />
 
-  <!-- Comprehensive JSON-LD Structured Data Graph for Search Engines -->
+  <!-- Comprehensive JSON-LD Structured Data Graph for Google Knowledge Panel -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Person",
+        "@type": ["Person", "ProfilePage"],
         "@id": "https://muhammadnawazsharif.github.io/#person",
         "name": "Muhammad Nawaz Sharif",
+        "givenName": "Muhammad Nawaz",
+        "familyName": "Sharif",
+        "honorificPrefix": "Lecturer",
+        "honorificSuffix": "M.Sc. Physics",
         "jobTitle": "Lecturer in Physics",
+        "occupation": {
+          "@type": "Occupation",
+          "name": "Lecturer",
+          "educationRequirements": "M.Sc. in Physics",
+          "occupationalCategory": "25-1054.00",
+          "description": "Teaches Physics at the intermediate college level in Gilgit-Baltistan, Pakistan."
+        },
+        "description": "Muhammad Nawaz Sharif is a Lecturer in Physics at Govt. Boys Inter College Gamba, Skardu, Gilgit-Baltistan, Pakistan. He holds an M.Sc. in Physics from the University of Karachi and a B.Sc. from the University of the Punjab. He specializes in conceptual physics education, handwritten lecture notes, and student mentorship for intermediate college students.",
         "worksFor": {
           "@type": "EducationalOrganization",
           "@id": "https://muhammadnawazsharif.github.io/#institution",
@@ -65,24 +77,38 @@
             "addressCountry": "PK"
           }
         },
+        "nationality": {
+          "@type": "Country",
+          "name": "Pakistan"
+        },
+        "gender": "Male",
         "url": "https://muhammadnawazsharif.github.io/",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://muhammadnawazsharif.github.io/assets/images/notes/note_gravitation_intro.png",
+          "description": "Physics lecture notes by Muhammad Nawaz Sharif, Lecturer in Physics"
+        },
         "sameAs": [
-          "https://www.facebook.com/nawaz.sharif.79/"
+          "https://www.facebook.com/nawaz.sharif.79/",
+          "https://muhammadnawazsharif.github.io/"
         ],
         "alumniOf": [
           {
             "@type": "EducationalOrganization",
-            "name": "University of Karachi"
+            "name": "University of Karachi",
+            "address": { "@type": "PostalAddress", "addressLocality": "Karachi", "addressCountry": "PK" }
           },
           {
             "@type": "EducationalOrganization",
-            "name": "University of the Punjab"
+            "name": "University of the Punjab",
+            "address": { "@type": "PostalAddress", "addressLocality": "Lahore", "addressCountry": "PK" }
           }
         ],
         "hasCredential": [
           {
             "@type": "EducationalOccupationalCredential",
             "name": "M.Sc. in Physics",
+            "credentialCategory": "degree",
             "recognizedBy": {
               "@type": "EducationalOrganization",
               "name": "University of Karachi"
@@ -91,6 +117,7 @@
           {
             "@type": "EducationalOccupationalCredential",
             "name": "B.Sc.",
+            "credentialCategory": "degree",
             "recognizedBy": {
               "@type": "EducationalOrganization",
               "name": "University of the Punjab"
@@ -103,41 +130,42 @@
           "Gravitation",
           "Thermodynamics",
           "Electromagnetism",
+          "Wave Mechanics",
+          "Quantum Physics",
           "Student Learning Outcomes (SLO)",
-          "Physics Pedagogy"
+          "Physics Pedagogy",
+          "Intermediate College Physics Pakistan"
         ],
-        "description": "Lecturer in Physics at Govt. Boys Inter College Gamba, Skardu, Gilgit-Baltistan, Pakistan, specializing in conceptual physics education, handwritten lecture notes, and student mentorship."
+        "keywords": "Muhammad Nawaz Sharif, Lecturer Physics, Skardu, Gilgit-Baltistan, Physics Teacher Pakistan, Govt College Gamba"
       },
       {
         "@type": "WebSite",
         "@id": "https://muhammadnawazsharif.github.io/#website",
         "url": "https://muhammadnawazsharif.github.io/",
-        "name": "Muhammad Nawaz Sharif - Physics Educator Portfolio",
+        "name": "Muhammad Nawaz Sharif | Lecturer in Physics",
+        "alternateName": "MNS Physics | Academic Portfolio",
         "publisher": {
           "@id": "https://muhammadnawazsharif.github.io/#person"
         },
-        "description": "Official website and physics resource center of Lecturer Muhammad Nawaz Sharif."
+        "description": "Official academic website and physics resource portal of Lecturer Muhammad Nawaz Sharif, M.Sc. Physics (University of Karachi), Govt. Boys Inter College Gamba, Skardu, Gilgit-Baltistan."
       },
       {
         "@type": "ProfilePage",
         "@id": "https://muhammadnawazsharif.github.io/#webpage",
         "url": "https://muhammadnawazsharif.github.io/",
-        "name": "Muhammad Nawaz Sharif | Lecturer in Physics | Skardu, Gilgit-Baltistan",
-        "isPartOf": {
-          "@id": "https://muhammadnawazsharif.github.io/#website"
-        },
-        "about": {
-          "@id": "https://muhammadnawazsharif.github.io/#person"
-        },
-        "mainEntity": {
-          "@id": "https://muhammadnawazsharif.github.io/#person"
-        }
+        "name": "Muhammad Nawaz Sharif — Lecturer in Physics | Skardu, Gilgit-Baltistan",
+        "isPartOf": { "@id": "https://muhammadnawazsharif.github.io/#website" },
+        "about": { "@id": "https://muhammadnawazsharif.github.io/#person" },
+        "mainEntity": { "@id": "https://muhammadnawazsharif.github.io/#person" },
+        "dateModified": "2026-08-24",
+        "inLanguage": "en"
       }
     ]
   }
   </script>
 
   <!-- Google Fonts: Space Grotesk, Plus Jakarta Sans, JetBrains Mono (Preconnected for Fast Loading) -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet" />
