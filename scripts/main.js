@@ -49,15 +49,15 @@ class App {
      ========================================================================== */
   initTheme() {
     const themeToggleBtn = document.getElementById('theme-toggle-btn');
-    const savedTheme = localStorage.getItem('mns_theme') || 'dark';
+    const savedTheme = localStorage.getItem('mns_theme') || 'light';
     
     document.documentElement.setAttribute('data-theme', savedTheme);
     this.updateThemeIcon(savedTheme);
 
     if (themeToggleBtn) {
       themeToggleBtn.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('mns_theme', newTheme);
         this.updateThemeIcon(newTheme);

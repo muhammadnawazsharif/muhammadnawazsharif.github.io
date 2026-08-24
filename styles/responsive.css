@@ -311,6 +311,43 @@
   }
 }
 
+/* ── Mobile Layout Polish & Zero-Overflow Safeguards ── */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  padding-left: clamp(1rem, 4vw, 2.5rem);
+  padding-right: clamp(1rem, 4vw, 2.5rem);
+}
+
+.table-responsive,
+.equation-calculated,
+.equation-formula,
+.equation-block {
+  overflow-x: auto;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Modal & Search Dialog on Mobile */
+.modal-overlay {
+  padding: clamp(0.5rem, 2vw, 1.5rem);
+}
+
+.modal-container {
+  width: min(720px, 94vw);
+  max-height: 90vh;
+  border-radius: var(--radius-lg);
+}
+
+.search-modal {
+  width: min(640px, 94vw);
+  max-height: 80vh;
+}
+
 /* ── Print Styles ── */
 @media print {
   .site-header,
