@@ -92,6 +92,8 @@ export const profileData = {
   social: {
     facebook: "https://www.facebook.com/nawaz.sharif.79/",
     facebookName: "Muhammad Nawaz Sharif",
+    linkedin: "https://www.linkedin.com/in/muhammad-nawaz-sharif-54481a241/",
+    linkedinName: "Muhammad Nawaz Sharif",
     email: "nawazshariflecturer@gmail.com",
     whatsapp: "https://wa.me/923475882592",
     phone: "+923475882592"
