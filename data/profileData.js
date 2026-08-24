@@ -86,7 +86,24 @@ export const profileData = {
     { label: "Designation", value: "Lecturer in Physics", isPlaceholder: false },
     { label: "Institution", value: "Govt. Boys Inter College Gamba", isPlaceholder: false },
     { label: "Master's Degree", value: "M.Sc. Physics (University of Karachi)", isPlaceholder: false },
-    { label: "Bachelor's Degree", value: "B.Sc. (University of the Punjab)", isPlaceholder: false }
+    { label: "Bachelor's Degree", value: "B.Sc. (University of the Punjab)", isPlaceholder: false },
+    { label: "Faculty Feature", value: "Faculty Highlight • MSST Skardu", isPlaceholder: false, link: "https://www.instagram.com/p/DL17UqGMUAs/" }
+  ],
+
+  affiliations: [
+    {
+      institution: "Govt. Boys Inter College Gamba",
+      role: "Lecturer in Physics",
+      location: "Skardu, Gilgit-Baltistan",
+      type: "Public Higher Secondary College"
+    },
+    {
+      institution: "Muhaddisa School of Science & Technology (MSST)",
+      role: "Physics Lecturer (Featured Faculty)",
+      location: "Skardu, Gilgit-Baltistan",
+      type: "Science & Technology Institute",
+      featureUrl: "https://www.instagram.com/p/DL17UqGMUAs/"
+    }
   ],
 
   social: {
@@ -94,6 +111,7 @@ export const profileData = {
     facebookName: "Muhammad Nawaz Sharif",
     linkedin: "https://www.linkedin.com/in/muhammad-nawaz-sharif-54481a241/",
     linkedinName: "Muhammad Nawaz Sharif",
+    instagramFeature: "https://www.instagram.com/p/DL17UqGMUAs/",
     email: "nawazshariflecturer@gmail.com",
     whatsapp: "https://wa.me/923475882592",
     phone: "+923475882592"

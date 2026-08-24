@@ -9,6 +9,7 @@ Official academic website and physics educational portal of **Muhammad Nawaz Sha
 - 💬 **WhatsApp**: [+92 347 5882592](https://wa.me/923475882592)
 - 💼 **LinkedIn**: [muhammad-nawaz-sharif](https://www.linkedin.com/in/muhammad-nawaz-sharif-54481a241/)
 - 👤 **Facebook**: [nawaz.sharif.79](https://www.facebook.com/nawaz.sharif.79/)
+- 🌟 **Faculty Highlight**: [MSST Skardu Feature](https://www.instagram.com/p/DL17UqGMUAs/)
 
 🌐 **Live Website**: [https://muhammadnawazsharif.github.io/](https://muhammadnawazsharif.github.io/)
 
