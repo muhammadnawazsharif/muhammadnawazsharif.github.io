@@ -5,6 +5,8 @@ Official academic website and physics educational portal of **Muhammad Nawaz Sha
 - **M.Sc. in Physics** – University of Karachi
 - **B.Sc.** – University of the Punjab
 - **Lecturer in Physics** – Govt. Boys Inter College Gamba, Skardu
+- 📧 **Email**: [nawazshariflecturer@gmail.com](mailto:nawazshariflecturer@gmail.com)
+- 💬 **WhatsApp**: [+92 347 5882592](https://wa.me/923475882592)
 
 🌐 **Live Website**: [https://muhammadnawazsharif.github.io/](https://muhammadnawazsharif.github.io/)
 

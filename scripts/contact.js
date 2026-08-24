@@ -47,12 +47,28 @@ export class ContactFormHandler {
       return;
     }
 
-    // Success response simulation
+    // Format message for WhatsApp delivery
+    const formattedText = `*Academic Inquiry for Lecturer Muhammad Nawaz Sharif*\n\n` +
+      `*Name:* ${name}\n` +
+      `*Email:* ${email}\n` +
+      (subject ? `*Subject:* ${subject}\n` : '') +
+      `*Message:*\n${message}\n\n` +
+      `_Sent via muhammadnawazsharif.github.io_`;
+
+    const whatsappUrl = `https://wa.me/923475882592?text=${encodeURIComponent(formattedText)}`;
+
+    // Submit button state
     const submitBtn = this.form.querySelector('button[type="submit"]');
     const originalText = submitBtn ? submitBtn.innerHTML : '';
     if (submitBtn) {
       submitBtn.disabled = true;
-      submitBtn.innerHTML = `<span>Sending Message...</span>`;
+      submitBtn.innerHTML = `
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="animate-spin">
+          <circle cx="12" cy="12" r="10" stroke-opacity="0.25"/>
+          <path d="M12 2a10 10 0 0 1 10 10"/>
+        </svg>
+        <span>Redirecting to WhatsApp...</span>
+      `;
     }
 
     setTimeout(() => {
@@ -61,8 +77,11 @@ export class ContactFormHandler {
         submitBtn.innerHTML = originalText;
       }
       this.form.reset();
-      this.showToast("Thank you, your message has been received! Muhammad Nawaz Sharif will get back to you soon.", "success");
-    }, 900);
+      this.showToast("Opening WhatsApp to send your inquiry to Lecturer Muhammad Nawaz Sharif...", "success");
+      
+      // Open WhatsApp in new tab or current window
+      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    }, 600);
   }
 
   showToast(message, type = "info") {
