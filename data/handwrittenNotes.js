@@ -1,6 +1,7 @@
 /**
  * Handwritten Physics Notes Showcase Data
- * Authentic verified handwritten lecture notes by Muhammad Nawaz Sharif
+ * Authentic verified handwritten lecture notes by Muhammad Nawaz Sharif - Lecturer
+ * Author: Muhammad Nawaz Sharif - Lecturer in Physics
  * Equations use clean Unicode — no LaTeX dependency.
  */
 
@@ -11,10 +12,12 @@ export const handwrittenNotes = [
     subtitle: "Newton's Law of Universal Gravitation, Cavendish Experiment & Inverse Square Law",
     chapter: "Chapter 01",
     classLevel: "2nd Year Physics",
+    author: "Muhammad Nawaz Sharif - Lecturer",
     image: "./assets/images/notes/note_gravitation_intro.png",
+    alt: "Chapter 1 Gravitation and Newton's Universal Law - Handwritten Notes by Muhammad Nawaz Sharif - Lecturer",
     downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
     tags: ["Gravitation", "Inverse Square Law", "Cavendish", "G Constant"],
-    summary: "Complete handwritten derivation of Newton's Law of Universal Gravitation, statement, Cavendish experiment confirmation, and Inverse Square Law graphing (F vs r).",
+    summary: "Complete handwritten derivation of Newton's Law of Universal Gravitation, statement, Cavendish experiment confirmation, and Inverse Square Law graphing (F vs r) authored by Muhammad Nawaz Sharif - Lecturer.",
     equations: ["F = G·m₁m₂ / r²", "G = 6.67 × 10⁻¹¹ N·m²·kg⁻²"]
   },
   {
@@ -23,10 +26,12 @@ export const handwrittenNotes = [
     subtitle: "Mutual force symmetry (F₁₂ = −F₂₁) & 8-point comparison table of G with g",
     chapter: "Chapter 01",
     classLevel: "2nd Year Physics",
+    author: "Muhammad Nawaz Sharif - Lecturer",
     image: "./assets/images/notes/note_newtons_3rd_law.png",
+    alt: "Gravitation Consistent with Newton's 3rd Law and G vs g Comparison - Handwritten Notes by Muhammad Nawaz Sharif - Lecturer",
     downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
     tags: ["Newton's 3rd Law", "G vs g", "Comparison Table", "Dimensions"],
-    summary: "Step-by-step proof that Newton's law of gravitation perfectly satisfies Newton's 3rd law of motion, accompanied by a rigorous 8-row comparison between Universal Gravitational Constant (G) and Acceleration due to gravity (g).",
+    summary: "Step-by-step proof that Newton's law of gravitation satisfies Newton's 3rd law of motion, accompanied by an 8-row comparison between Universal Gravitational Constant (G) and Acceleration due to gravity (g) by Muhammad Nawaz Sharif - Lecturer.",
     equations: ["F₁₂ = −F₂₁", "g = GM / R²"]
   },
   {
@@ -35,10 +40,12 @@ export const handwrittenNotes = [
     subtitle: "Complete mathematical derivation & numerical computation (M_E = 5.97 × 10²⁴ kg)",
     chapter: "Chapter 01",
     classLevel: "2nd Year Physics",
+    author: "Muhammad Nawaz Sharif - Lecturer",
     image: "./assets/images/notes/note_mass_of_earth.png",
+    alt: "Determination of Mass of the Earth Derivation - Handwritten Notes by Muhammad Nawaz Sharif - Lecturer",
     downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
     tags: ["Mass of Earth", "Derivation", "Numerical Calculation", "Earth Radius"],
-    summary: "Derivation of formula M_E = (g·R_E²) / G by equating weight with gravitational force, followed by step-by-step numerical substitution yielding M_E ≈ 5.97 × 10²⁴ kg.",
+    summary: "Derivation of formula M_E = (g·R_E²) / G by equating weight with gravitational force, followed by step-by-step numerical substitution yielding M_E ≈ 5.97 × 10²⁴ kg by Muhammad Nawaz Sharif - Lecturer.",
     equations: ["M_E = g·R_E² / G", "M_E = 5.97 × 10²⁴ kg"]
   },
   {
@@ -47,10 +54,12 @@ export const handwrittenNotes = [
     subtitle: "Surface calculation (9.83 m/s²) and variation with altitude, depth & latitude",
     chapter: "Chapter 01",
     classLevel: "2nd Year Physics",
+    author: "Muhammad Nawaz Sharif - Lecturer",
     image: "./assets/images/notes/note_value_of_g.png",
+    alt: "Value of g on Earth's Surface and Variations - Handwritten Notes by Muhammad Nawaz Sharif - Lecturer",
     downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
     tags: ["Acceleration due to gravity", "Earth Shape", "Depth", "Latitude"],
-    summary: "Numerical derivation of surface g = 9.83 m/s², alongside detailed physical explanations and formulas for variation with altitude, variation with depth g_d = g(1 − d/R), and oblate spheroid equator-pole effects.",
+    summary: "Numerical derivation of surface g = 9.83 m/s², alongside detailed physical explanations for variation with altitude, variation with depth g_d = g(1 − d/R), and oblate spheroid effects by Muhammad Nawaz Sharif - Lecturer.",
     equations: ["g = GM / R²  ≈  9.83 m·s⁻²", "g_d = g·(1 − d/R)"]
   },
   {
@@ -59,10 +68,12 @@ export const handwrittenNotes = [
     subtitle: "Rigorous binomial derivation for small altitudes (h << R) & g vs h curve",
     chapter: "Chapter 01",
     classLevel: "2nd Year Physics",
+    author: "Muhammad Nawaz Sharif - Lecturer",
     image: "./assets/images/notes/note_variation_of_g_altitude.png",
+    alt: "Variation of g at Altitude Binomial Derivation - Handwritten Notes by Muhammad Nawaz Sharif - Lecturer",
     downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
     tags: ["Binomial Expansion", "Altitude", "Linear Decrease", "Graph g vs h"],
-    summary: "Proof of g_h = g·(R / (R+h))², application of binomial theorem for small heights giving g_h ≈ g(1 − 2h/R), and asymptotic table of g values at h = 0, R/2, R, 2R, ∞.",
+    summary: "Proof of g_h = g·(R / (R+h))², application of binomial theorem for small heights giving g_h ≈ g(1 − 2h/R), and asymptotic table of g values by Muhammad Nawaz Sharif - Lecturer.",
     equations: ["g_h = g·[R / (R + h)]²", "g_h ≈ g·(1 − 2h/R)"]
   },
   {
@@ -71,10 +82,12 @@ export const handwrittenNotes = [
     subtitle: "Definition, formula, units, and radial vs uniform gravitational field line diagrams",
     chapter: "Chapter 01",
     classLevel: "2nd Year Physics",
+    author: "Muhammad Nawaz Sharif - Lecturer",
     image: "./assets/images/notes/note_gravitational_field_strength.png",
+    alt: "Gravitational Field Strength and Field Lines Diagram - Handwritten Notes by Muhammad Nawaz Sharif - Lecturer",
     downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
     tags: ["Field Strength", "Field Lines", "Mean Density", "Vector Field"],
-    summary: "Comprehensive breakdown of Gravitational Field Strength g = F/m, planetary surface formula in terms of mean density ρ, and 5 key properties of continuous gravitational field lines.",
+    summary: "Comprehensive breakdown of Gravitational Field Strength g = F/m, planetary surface formula with mean density ρ, and 5 key properties of field lines by Muhammad Nawaz Sharif - Lecturer.",
     equations: ["g = GM / r²", "g = (4/3)·π·G·ρ·R"]
   },
   {
@@ -83,10 +96,12 @@ export const handwrittenNotes = [
     subtitle: "Orbital velocity derivation, circular orbit conditions & escape speed comparison",
     chapter: "Chapter 01",
     classLevel: "2nd Year Physics",
+    author: "Muhammad Nawaz Sharif - Lecturer",
     image: "./assets/images/notes/note_satellites_and_orbits.png",
+    alt: "Satellites and Orbits Orbital and Escape Velocity - Handwritten Notes by Muhammad Nawaz Sharif - Lecturer",
     downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
     tags: ["Satellites", "Orbital Velocity", "Escape Velocity", "Kepler Orbits"],
-    summary: "Step-by-step derivation of orbital velocity v = √(GM/r), computation at low altitude v = 7.91 km/s, comparison with Escape Velocity v_esc = √(2GM/R) = 11.2 km/s, and orbital altitude relationships.",
+    summary: "Step-by-step derivation of orbital velocity v = √(GM/r), computation at low altitude v = 7.91 km/s, and comparison with Escape Velocity v_esc = √(2GM/R) = 11.2 km/s by Muhammad Nawaz Sharif - Lecturer.",
     equations: ["v_orb = √(GM/r)", "v_esc = √2 · v_orb  =  11.2 km/s"]
   },
   {
@@ -95,10 +110,180 @@ export const handwrittenNotes = [
     subtitle: "Complete mathematical presentation for college board examinations",
     chapter: "Chapter 01",
     classLevel: "2nd Year Physics",
+    author: "Muhammad Nawaz Sharif - Lecturer",
     image: "./assets/images/notes/note_variation_of_g_formula.png",
+    alt: "Variation of g with Altitude Detailed Exam Proof - Handwritten Notes by Muhammad Nawaz Sharif - Lecturer",
     downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
     tags: ["Board Exam Preparation", "Altitude Formula", "Summary Sheet"],
-    summary: "Clear summary notes formatted for board exam answer writing, detailing introductory statement, diagram, altitude formula, and numerical calculation example.",
+    summary: "Clear summary notes formatted for board exam answer writing, detailing introductory statement, diagram, altitude formula, and numerical calculation example by Muhammad Nawaz Sharif - Lecturer.",
     equations: ["g_h ≈ g·(1 − 2h/R)", "g_surface = 9.8 m·s⁻²"]
+  },
+  {
+    id: "note-mechanics-projectile",
+    title: "Projectile Motion & Kinematic Trajectories",
+    subtitle: "2D Parabolic Trajectories, Maximum Range, Apex Height & Time of Flight",
+    chapter: "Chapter 03",
+    classLevel: "1st Year Physics",
+    author: "Muhammad Nawaz Sharif - Lecturer",
+    image: "./assets/images/notes/note_mechanics_projectile_motion.png",
+    alt: "Projectile Motion and Kinematic Trajectories - Handwritten Notes by Muhammad Nawaz Sharif - Lecturer",
+    downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
+    tags: ["Kinematics", "Projectile Motion", "Range", "Max Height"],
+    summary: "Complete vector resolution and trajectory derivation for two-dimensional projectile motion under uniform gravity by Muhammad Nawaz Sharif - Lecturer.",
+    equations: ["y = x·tanθ − gx²/(2v₀²·cos²θ)", "R = v₀²·sin(2θ)/g"]
+  },
+  {
+    id: "note-work-energy",
+    title: "Work-Energy Theorem & Potential Energy",
+    subtitle: "Work done by variable forces, absolute gravitational potential energy & conservation",
+    chapter: "Chapter 04",
+    classLevel: "1st Year Physics",
+    author: "Muhammad Nawaz Sharif - Lecturer",
+    image: "./assets/images/notes/note_work_energy_theorem.png",
+    alt: "Work Energy Theorem and Potential Energy - Handwritten Notes by Muhammad Nawaz Sharif - Lecturer",
+    downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
+    tags: ["Work-Energy", "Potential Energy", "Conservative Forces", "Power"],
+    summary: "Rigorous mathematical proof of the Work-Energy theorem and derivation of absolute gravitational potential energy U = −GMm/r by Muhammad Nawaz Sharif - Lecturer.",
+    equations: ["W_net = ΔKE = ½mv_f² − ½mv_i²", "U(r) = −G·M·m / r"]
+  },
+  {
+    id: "note-rotational-dynamics",
+    title: "Rotational Dynamics & Moment of Inertia",
+    subtitle: "Torque as vector cross product, rotational kinetic energy & angular momentum",
+    chapter: "Chapter 05",
+    classLevel: "1st Year Physics",
+    author: "Muhammad Nawaz Sharif - Lecturer",
+    image: "./assets/images/notes/note_rotational_dynamics_torque.png",
+    alt: "Rotational Dynamics and Torque - Handwritten Notes by Muhammad Nawaz Sharif - Lecturer",
+    downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
+    tags: ["Torque", "Moment of Inertia", "Angular Momentum", "Rolling Motion"],
+    summary: "Comprehensive comparison of linear vs rotational mechanics, moment of inertia derivations for geometric bodies, and angular momentum conservation by Muhammad Nawaz Sharif - Lecturer.",
+    equations: ["τ = I·α", "L = I·ω = constant"]
+  },
+  {
+    id: "note-fluid-mechanics",
+    title: "Fluid Dynamics & Bernoulli's Equation",
+    subtitle: "Viscosity, Stokes' Law, Terminal Velocity & Continuity Principle",
+    chapter: "Chapter 06",
+    classLevel: "1st Year Physics",
+    author: "Muhammad Nawaz Sharif - Lecturer",
+    image: "./assets/images/notes/note_fluid_dynamics_bernoulli.png",
+    alt: "Fluid Dynamics and Bernoulli Equation - Handwritten Notes by Muhammad Nawaz Sharif - Lecturer",
+    downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
+    tags: ["Fluid Dynamics", "Bernoulli", "Stokes Law", "Terminal Velocity"],
+    summary: "Complete derivation of Bernoulli's equation from the work-energy theorem, equation of continuity, and Stokes' law terminal velocity by Muhammad Nawaz Sharif - Lecturer.",
+    equations: ["P + ½ρv² + ρgh = const", "F_d = 6πηrv_t"]
+  },
+  {
+    id: "note-shm-oscillations",
+    title: "Simple Harmonic Motion & Oscillations",
+    subtitle: "Simple Pendulum, Spring-Mass System, Energy Exchange & Resonance",
+    chapter: "Chapter 07",
+    classLevel: "1st Year Physics",
+    author: "Muhammad Nawaz Sharif - Lecturer",
+    image: "./assets/images/notes/note_shm_simple_pendulum.png",
+    alt: "Simple Harmonic Motion and Pendulum Oscillations - Handwritten Notes by Muhammad Nawaz Sharif - Lecturer",
+    downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
+    tags: ["SHM", "Simple Pendulum", "Resonance", "Time Period"],
+    summary: "Analytical proof of SHM conditions for simple pendulum, instantaneous velocity, acceleration derivations, and kinetic-potential energy graphs by Muhammad Nawaz Sharif - Lecturer.",
+    equations: ["T = 2π √(L/g)", "a = −ω² x"]
+  },
+  {
+    id: "note-thermodynamics-heat",
+    title: "Thermodynamics & Carnot Heat Engine",
+    subtitle: "First & Second Laws of Thermodynamics, Molar Heat Capacities & Entropy",
+    chapter: "Chapter 11",
+    classLevel: "1st Year Physics",
+    author: "Muhammad Nawaz Sharif - Lecturer",
+    image: "./assets/images/notes/note_thermodynamics_carnot_cycle.png",
+    alt: "Thermodynamics and Carnot Cycle - Handwritten Notes by Muhammad Nawaz Sharif - Lecturer",
+    downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
+    tags: ["Thermodynamics", "Carnot Engine", "Entropy", "Ideal Gas"],
+    summary: "Step-by-step breakdown of Carnot cycle PV diagram, maximum thermal efficiency derivation η = 1 − T_C/T_H, and Mayer's relation C_p − C_v = R by Muhammad Nawaz Sharif - Lecturer.",
+    equations: ["ΔQ = ΔU + W", "η = 1 − (T_C / T_H)"]
+  },
+  {
+    id: "note-electromagnetism",
+    title: "Electrostatics & Coulomb's Law",
+    subtitle: "Electric Field Intensity, Gauss's Law, Capacitance & Potential Gradient",
+    chapter: "Chapter 12",
+    classLevel: "2nd Year Physics",
+    author: "Muhammad Nawaz Sharif - Lecturer",
+    image: "./assets/images/notes/note_electromagnetism_coulombs_law.png",
+    alt: "Electrostatics and Coulomb Law - Handwritten Notes by Muhammad Nawaz Sharif - Lecturer",
+    downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
+    tags: ["Electrostatics", "Coulombs Law", "Electric Field", "Gauss Law"],
+    summary: "Vector formulation of Coulomb's Law in dielectric media, electric potential derivation, and Gauss's law applications by Muhammad Nawaz Sharif - Lecturer.",
+    equations: ["F = (1/4πε₀) · (q₁q₂/r²)", "E = −ΔV / Δr"]
+  },
+  {
+    id: "note-quantum-physics",
+    title: "Modern Quantum Physics & Photoelectric Effect",
+    subtitle: "Planck's Hypothesis, Einstein's Photoelectric Equation & de Broglie Waves",
+    chapter: "Chapter 19",
+    classLevel: "2nd Year Physics",
+    author: "Muhammad Nawaz Sharif - Lecturer",
+    image: "./assets/images/notes/note_quantum_photoelectric_effect.png",
+    alt: "Quantum Physics and Photoelectric Effect - Handwritten Notes by Muhammad Nawaz Sharif - Lecturer",
+    downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
+    tags: ["Quantum Physics", "Photoelectric Effect", "de Broglie", "Stopping Potential"],
+    summary: "Detailed derivation of Einstein's photoelectric equation, stopping potential calculations, and matter wavelength de Broglie relations by Muhammad Nawaz Sharif - Lecturer.",
+    equations: ["hf = Φ + ½mv_max²", "λ = h / p"]
+  },
+  {
+    id: "note-fbise-numericals",
+    title: "FBISE & College Board Solved Numericals",
+    subtitle: "Step-by-step solutions for challenging board exam physics numericals",
+    chapter: "Exam Prep",
+    classLevel: "1st & 2nd Year",
+    author: "Muhammad Nawaz Sharif - Lecturer",
+    image: "./assets/images/notes/note_fbise_board_solved_numerical.png",
+    alt: "FBISE Board Solved Physics Numericals - Handwritten Notes by Muhammad Nawaz Sharif - Lecturer",
+    downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
+    tags: ["Board Numericals", "Solved Problems", "Exam Tips", "Marking Scheme"],
+    summary: "Curated collection of high-probability board examination numerical problems solved with clear units, data organization, and final answer highlights by Muhammad Nawaz Sharif - Lecturer.",
+    equations: ["Data → Formula → Calculation → Units", "Precision & Significant Figures"]
+  },
+  {
+    id: "note-slo-questions",
+    title: "SLO-Based Conceptual Questions Bank",
+    subtitle: "Reasoning-based answers and critical thinking physics evaluations",
+    chapter: "SLO Bank",
+    classLevel: "Intermediate Physics",
+    author: "Muhammad Nawaz Sharif - Lecturer",
+    image: "./assets/images/notes/note_slo_conceptual_questions.png",
+    alt: "SLO Based Conceptual Physics Questions - Handwritten Notes by Muhammad Nawaz Sharif - Lecturer",
+    downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
+    tags: ["SLO", "Conceptual Questions", "Reasoning", "Critical Thinking"],
+    summary: "Standardized SLO-focused short question solutions emphasizing conceptual physics intuition rather than textbook rote memorization by Muhammad Nawaz Sharif - Lecturer.",
+    equations: ["Concept Verification", "Cause & Effect Reasoning"]
+  },
+  {
+    id: "note-entry-test-shortcuts",
+    title: "Entry Test Physics Shortcuts (ECAT / MDCAT)",
+    subtitle: "High-speed calculation techniques, dimensional tricks & elimination strategies",
+    chapter: "Entry Test",
+    classLevel: "College Pre-Engineering / Pre-Medical",
+    author: "Muhammad Nawaz Sharif - Lecturer",
+    image: "./assets/images/notes/note_entry_test_physics_shortcuts.png",
+    alt: "Entry Test ECAT MDCAT Physics Shortcuts - Handwritten Notes by Muhammad Nawaz Sharif - Lecturer",
+    downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
+    tags: ["Entry Test", "ECAT", "MDCAT", "Shortcuts", "Speed Math"],
+    summary: "Time-saving physics formulas and proportional reasoning shortcuts for competitive college entrance tests by Muhammad Nawaz Sharif - Lecturer.",
+    equations: ["Proportional Scaling Rules", "Dimensional Elimination"]
+  },
+  {
+    id: "note-kepler-laws",
+    title: "Astrophysics & Kepler's Laws of Planetary Motion",
+    subtitle: "Elliptical orbits, equal areas in equal times & Harmonic Law derivation",
+    chapter: "Astrophysics",
+    classLevel: "2nd Year Physics",
+    author: "Muhammad Nawaz Sharif - Lecturer",
+    image: "./assets/images/notes/note_astrophysics_kepler_laws.png",
+    alt: "Astrophysics and Kepler Laws of Planetary Motion - Handwritten Notes by Muhammad Nawaz Sharif - Lecturer",
+    downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
+    tags: ["Kepler Laws", "Planetary Motion", "Astrophysics", "Harmonic Law"],
+    summary: "Complete mathematical derivation of Kepler's Third Law (Harmonic Law) T² ∝ r³ from universal gravitation and circular orbital conditions by Muhammad Nawaz Sharif - Lecturer.",
+    equations: ["T² = (4π²/GM) · r³", "dA/dt = L / (2m) = const"]
   }
 ];

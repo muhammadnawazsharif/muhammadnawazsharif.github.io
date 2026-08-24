@@ -67,7 +67,10 @@ export class ModalManager {
     const bodyHTML = `
       <div style="display: flex; flex-direction: column; gap: 1rem;">
         <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
-          <p style="margin: 0; color: var(--text-muted); font-size: 0.875rem;">${note.subtitle}</p>
+          <div>
+            <span style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--accent-gold); background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.3); padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 0.25rem;">Author: Muhammad Nawaz Sharif - Lecturer in Physics</span>
+            <p style="margin: 0; color: var(--text-muted); font-size: 0.875rem;">${note.subtitle}</p>
+          </div>
           <div style="display: flex; gap: 0.5rem; align-items: center;">
             <button class="btn btn-icon btn-sm" id="btn-zoom-in" title="Zoom In">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
@@ -82,12 +85,15 @@ export class ModalManager {
         </div>
 
         <div class="lightbox-image-wrapper">
-          <img src="${note.image}" alt="${note.title}" id="lightbox-zoom-target" style="transform-origin: center center; transition: transform 0.2s ease;" />
+          <img src="${note.image}" alt="${note.alt || (note.title + ' - Author: Muhammad Nawaz Sharif - Lecturer')}" id="lightbox-zoom-target" style="transform-origin: center center; transition: transform 0.2s ease;" />
         </div>
 
         <div style="background: var(--bg-card); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
-          <h4 style="font-size: 0.9375rem; color: var(--accent-cyan); margin-bottom: 0.5rem;">Core Summary & Key Insights:</h4>
-          <p style="font-size: 0.875rem; color: var(--text-secondary); margin: 0;">${note.summary}</p>
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+            <h4 style="font-size: 0.9375rem; color: var(--accent-cyan); margin: 0;">Core Summary & Key Insights:</h4>
+            <span style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-muted);">Verified Handwritten Handout</span>
+          </div>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); margin: 0; line-height: 1.6;">${note.summary}</p>
         </div>
       </div>
     `;

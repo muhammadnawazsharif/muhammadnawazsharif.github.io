@@ -214,12 +214,14 @@ class App {
     container.innerHTML = handwrittenNotes.map(note => `
       <div class="card reveal-on-scroll note-card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
         <div style="position: relative; height: 210px; overflow: hidden; background: #070b16; cursor: pointer;" onclick="window.app.openNoteLightbox('${note.id}')">
-          <img src="${note.image}" alt="${note.title}" style="width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform 0.4s ease;" />
+          <img src="${note.image}" alt="${note.alt || (note.title + ' - Author: Muhammad Nawaz Sharif - Lecturer')}" style="width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform 0.4s ease;" loading="lazy" />
           <div style="position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(7, 11, 22, 0.9) 100%);"></div>
           <span style="position: absolute; top: 12px; left: 12px; background: rgba(0, 102, 255, 0.85); backdrop-filter: blur(8px); color: #ffffff; padding: 3px 8px; border-radius: var(--radius-sm); font-size: 0.6875rem; font-family: var(--font-mono); font-weight: 600;">${note.classLevel}</span>
+          <span style="position: absolute; top: 12px; right: 12px; background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(8px); color: var(--accent-gold); border: 1px solid rgba(245, 158, 11, 0.4); padding: 3px 8px; border-radius: var(--radius-sm); font-size: 0.6875rem; font-family: var(--font-mono);">Lecturer Nawaz Sharif</span>
         </div>
 
         <div style="padding: 1.25rem; display: flex; flex-direction: column; flex: 1;">
+          <div style="font-size: 0.6875rem; font-family: var(--font-mono); color: var(--accent-cyan); text-transform: uppercase; margin-bottom: 0.25rem;">${note.chapter} • Muhammad Nawaz Sharif - Lecturer</div>
           <h3 style="font-size: 1.0625rem; margin-bottom: 0.35rem; color: var(--text-primary); cursor: pointer;" onclick="window.app.openNoteLightbox('${note.id}')">${note.title}</h3>
           <p style="font-size: 0.8125rem; color: var(--text-muted); margin-bottom: 1rem; line-height: 1.5; flex: 1;">${note.subtitle}</p>
 
