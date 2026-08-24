@@ -1,6 +1,7 @@
 /**
  * Student Portal Hub Data ("For My Students")
  * Quick-access resources, formula cheat-sheet, past papers, assignments
+ * Formulas use clean Unicode — no LaTeX dependency.
  */
 
 export const studentPortalData = {
@@ -59,36 +60,36 @@ export const studentPortalData = {
     {
       category: "Kinematics & Dynamics",
       items: [
-        { name: "Equations of Motion", formula: "v_f = v_i + at, \\quad s = v_i t + \\frac{1}{2}at^2, \\quad 2as = v_f^2 - v_i^2", note: "Uniform acceleration only" },
-        { name: "Newton's 2nd Law", formula: "F = ma = \\frac{\\Delta p}{\\Delta t}", note: "Force is rate of change of momentum" },
-        { name: "Projectile Range", formula: "R = \\frac{v_0^2 \\sin 2\\theta}{g}", note: "Max range at θ = 45°" },
-        { name: "Projectile Max Height", formula: "H_{max} = \\frac{v_0^2 \\sin^2\\theta}{2g}", note: "Vertical velocity component is zero at apex" }
+        { name: "Equations of Motion",    formula: "v_f = v_i + at  |  s = v_i·t + ½at²  |  v_f² = v_i² + 2as", note: "Uniform acceleration only" },
+        { name: "Newton's 2nd Law",        formula: "F = ma = Δp / Δt",                                              note: "Force is rate of change of momentum" },
+        { name: "Projectile Range",        formula: "R = v₀²·sin(2θ) / g",                                          note: "Maximum range when θ = 45°" },
+        { name: "Projectile Max Height",   formula: "H = v₀²·sin²θ / (2g)",                                         note: "Vertical velocity = 0 at apex" }
       ]
     },
     {
       category: "Gravitation & Circular Motion",
       items: [
-        { name: "Universal Gravitation", formula: "F = G \\frac{m_1 m_2}{r^2}", note: "G = 6.674 × 10⁻¹¹ N m² kg⁻²" },
-        { name: "Mass of Earth", formula: "M_E = \\frac{g R_E^2}{G} \\approx 5.97 \\times 10^{24} \\text{ kg}", note: "R_E = 6.371 × 10⁶ m" },
-        { name: "Variation of g with Altitude", formula: "g_h \\approx g \\left(1 - \\frac{2h}{R}\\right)", note: "Valid for small altitudes h << R" },
-        { name: "Orbital Velocity", formula: "v_{orb} = \\sqrt{\\frac{GM}{r}} \\approx 7.91 \\text{ km/s}", note: "Low Earth orbit condition" },
-        { name: "Escape Velocity", formula: "v_{esc} = \\sqrt{\\frac{2GM}{R}} = \\sqrt{2} v_{orb} \\approx 11.2 \\text{ km/s}", note: "Independent of projectile mass" }
+        { name: "Universal Gravitation",          formula: "F = G·m₁m₂ / r²",                             note: "G = 6.674 × 10⁻¹¹ N m² kg⁻²" },
+        { name: "Mass of Earth",                  formula: "M_E = g·R_E² / G  ≈  5.97 × 10²⁴ kg",       note: "R_E = 6.371 × 10⁶ m" },
+        { name: "Variation of g with Altitude",   formula: "g_h ≈ g·(1 − 2h/R)",                          note: "Valid for small altitudes h << R" },
+        { name: "Orbital Velocity",               formula: "v_orb = √(GM/r)  ≈  7.91 km/s",              note: "Low Earth orbit condition" },
+        { name: "Escape Velocity",                formula: "v_esc = √(2GM/R)  = √2 · v_orb  ≈  11.2 km/s", note: "Independent of projectile mass" }
       ]
     },
     {
       category: "Work, Energy & Power",
       items: [
-        { name: "Work Definition", formula: "W = \\vec{F} \\cdot \\vec{d} = F d \\cos\\theta", note: "Unit: Joule (J = N·m)" },
-        { name: "Work-Energy Theorem", formula: "W_{net} = \\Delta K = \\frac{1}{2}m v_f^2 - \\frac{1}{2}m v_i^2", note: "Valid for all forces" },
-        { name: "Absolute Potential Energy", formula: "U = -\\frac{G M m}{r}", note: "Zero reference at infinity (r → ∞)" }
+        { name: "Work Definition",          formula: "W = F·d·cosθ",                              note: "Unit: Joule (J = N·m)" },
+        { name: "Work-Energy Theorem",      formula: "W_net = ΔKE = ½mv_f² − ½mv_i²",            note: "Valid for all forces" },
+        { name: "Absolute Potential Energy",formula: "U = −G·M·m / r",                            note: "Zero reference at infinity (r → ∞)" }
       ]
     },
     {
       category: "Oscillations & Waves",
       items: [
-        { name: "Simple Pendulum Period", formula: "T = 2\\pi \\sqrt{\\frac{L}{g}}", note: "Independent of bob mass for small angles" },
-        { name: "Spring-Mass Period", formula: "T = 2\\pi \\sqrt{\\frac{m}{k}}", note: "k is spring stiffness constant" },
-        { name: "Wave Velocity Relation", formula: "v = f \\lambda", note: "v depends purely on medium properties" }
+        { name: "Simple Pendulum Period",   formula: "T = 2π √(L/g)",        note: "Independent of bob mass for small angles" },
+        { name: "Spring-Mass Period",       formula: "T = 2π √(m/k)",        note: "k is spring stiffness constant" },
+        { name: "Wave Velocity Relation",   formula: "v = f · λ",             note: "v depends purely on medium properties" }
       ]
     }
   ]

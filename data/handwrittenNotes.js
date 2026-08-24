@@ -1,8 +1,7 @@
 /**
  * Handwritten Physics Notes Showcase Data
  * Authentic verified handwritten lecture notes by Muhammad Nawaz Sharif
- * Lecturer in Physics, Govt. Boys Inter College Gamba, Skardu
- * Domain: https://muhammadnawazsharif.github.io/
+ * Equations use clean Unicode — no LaTeX dependency.
  */
 
 export const handwrittenNotes = [
@@ -16,19 +15,19 @@ export const handwrittenNotes = [
     downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
     tags: ["Gravitation", "Inverse Square Law", "Cavendish", "G Constant"],
     summary: "Complete handwritten derivation of Newton's Law of Universal Gravitation, statement, Cavendish experiment confirmation, and Inverse Square Law graphing (F vs r).",
-    equations: ["F = G \\frac{m_1 m_2}{r^2}", "G = 6.67 \\times 10^{-11} \\text{ N m}^2\\text{kg}^{-2}"]
+    equations: ["F = G·m₁m₂ / r²", "G = 6.67 × 10⁻¹¹ N·m²·kg⁻²"]
   },
   {
     id: "note-newtons-3rd-law",
     title: "Gravitation Consistent with Newton's 3rd Law & G vs g",
-    subtitle: "Mutual force symmetry (F₁₂ = -F₂₁) & 8-point comparison table of G with g",
+    subtitle: "Mutual force symmetry (F₁₂ = −F₂₁) & 8-point comparison table of G with g",
     chapter: "Chapter 01",
     classLevel: "2nd Year Physics",
     image: "./assets/images/notes/note_newtons_3rd_law.png",
     downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
     tags: ["Newton's 3rd Law", "G vs g", "Comparison Table", "Dimensions"],
     summary: "Step-by-step proof that Newton's law of gravitation perfectly satisfies Newton's 3rd law of motion, accompanied by a rigorous 8-row comparison between Universal Gravitational Constant (G) and Acceleration due to gravity (g).",
-    equations: ["F_{12} = -F_{21}", "g = \\frac{GM}{R^2}"]
+    equations: ["F₁₂ = −F₂₁", "g = GM / R²"]
   },
   {
     id: "note-mass-of-earth",
@@ -39,8 +38,8 @@ export const handwrittenNotes = [
     image: "./assets/images/notes/note_mass_of_earth.png",
     downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
     tags: ["Mass of Earth", "Derivation", "Numerical Calculation", "Earth Radius"],
-    summary: "Derivation of formula M_E = (g R_E²) / G by equating weight with gravitational force, followed by step-by-step numerical substitution yielding M_E ≈ 5.97 × 10²⁴ kg.",
-    equations: ["M_E = \\frac{g R_E^2}{G}", "M_E = 5.97 \\times 10^{24} \\text{ kg}"]
+    summary: "Derivation of formula M_E = (g·R_E²) / G by equating weight with gravitational force, followed by step-by-step numerical substitution yielding M_E ≈ 5.97 × 10²⁴ kg.",
+    equations: ["M_E = g·R_E² / G", "M_E = 5.97 × 10²⁴ kg"]
   },
   {
     id: "note-value-of-g",
@@ -51,8 +50,8 @@ export const handwrittenNotes = [
     image: "./assets/images/notes/note_value_of_g.png",
     downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
     tags: ["Acceleration due to gravity", "Earth Shape", "Depth", "Latitude"],
-    summary: "Numerical derivation of surface g = 9.83 m/s², alongside detailed physical explanations and formulas for variation with altitude, variation with depth g_d = g(1 - d/R), and oblate spheroid equator-pole effects.",
-    equations: ["g = \\frac{GM}{R^2} \\approx 9.83 \\text{ ms}^{-2}", "g_d = g(1 - \\frac{d}{R})"]
+    summary: "Numerical derivation of surface g = 9.83 m/s², alongside detailed physical explanations and formulas for variation with altitude, variation with depth g_d = g(1 − d/R), and oblate spheroid equator-pole effects.",
+    equations: ["g = GM / R²  ≈  9.83 m·s⁻²", "g_d = g·(1 − d/R)"]
   },
   {
     id: "note-variation-altitude-binomial",
@@ -63,8 +62,8 @@ export const handwrittenNotes = [
     image: "./assets/images/notes/note_variation_of_g_altitude.png",
     downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
     tags: ["Binomial Expansion", "Altitude", "Linear Decrease", "Graph g vs h"],
-    summary: "Proof of g_h = g (R / (R+h))², application of binomial theorem for small heights giving g_h ≈ g(1 - 2h/R), and asymptotic table of g values at h = 0, R/2, R, 2R, ∞.",
-    equations: ["g_h = g \\left(\\frac{R}{R+h}\\right)^2", "g_h \\approx g \\left(1 - \\frac{2h}{R}\\right)"]
+    summary: "Proof of g_h = g·(R / (R+h))², application of binomial theorem for small heights giving g_h ≈ g(1 − 2h/R), and asymptotic table of g values at h = 0, R/2, R, 2R, ∞.",
+    equations: ["g_h = g·[R / (R + h)]²", "g_h ≈ g·(1 − 2h/R)"]
   },
   {
     id: "note-gravitational-field-strength",
@@ -76,7 +75,7 @@ export const handwrittenNotes = [
     downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
     tags: ["Field Strength", "Field Lines", "Mean Density", "Vector Field"],
     summary: "Comprehensive breakdown of Gravitational Field Strength g = F/m, planetary surface formula in terms of mean density ρ, and 5 key properties of continuous gravitational field lines.",
-    equations: ["g = \\frac{GM}{r^2}", "g = \\frac{4}{3}\\pi G \\rho R"]
+    equations: ["g = GM / r²", "g = (4/3)·π·G·ρ·R"]
   },
   {
     id: "note-satellites-and-orbits",
@@ -88,7 +87,7 @@ export const handwrittenNotes = [
     downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
     tags: ["Satellites", "Orbital Velocity", "Escape Velocity", "Kepler Orbits"],
     summary: "Step-by-step derivation of orbital velocity v = √(GM/r), computation at low altitude v = 7.91 km/s, comparison with Escape Velocity v_esc = √(2GM/R) = 11.2 km/s, and orbital altitude relationships.",
-    equations: ["v = \\sqrt{\\frac{GM}{r}}", "v_{esc} = \\sqrt{2} v_{orb} = 11.2 \\text{ km/s}"]
+    equations: ["v_orb = √(GM/r)", "v_esc = √2 · v_orb  =  11.2 km/s"]
   },
   {
     id: "note-variation-altitude-proof",
@@ -100,6 +99,6 @@ export const handwrittenNotes = [
     downloadPdf: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
     tags: ["Board Exam Preparation", "Altitude Formula", "Summary Sheet"],
     summary: "Clear summary notes formatted for board exam answer writing, detailing introductory statement, diagram, altitude formula, and numerical calculation example.",
-    equations: ["g_h = g \\left(1 - \\frac{2h}{R}\\right)", "g_{surface} = 9.8 \\text{ ms}^{-2}"]
+    equations: ["g_h ≈ g·(1 − 2h/R)", "g_surface = 9.8 m·s⁻²"]
   }
 ];

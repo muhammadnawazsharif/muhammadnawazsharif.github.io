@@ -1,6 +1,7 @@
 /**
  * Physics Visual Lab Simulations Data
  * Configuration, equations, default parameters, and descriptions for 6 interactive simulations
+ * Equations use clean Unicode/HTML — no LaTeX dependency required.
  */
 
 export const simulationsData = [
@@ -10,11 +11,16 @@ export const simulationsData = [
     badge: "Kinematics",
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h16M4 20C8 10 16 10 20 20"/></svg>`,
     description: "Launch projectiles at customizable velocities and angles to observe parabolic trajectories, maximum height, range, and flight time.",
-    formulaPrimary: "y(x) = x\\tan\\theta - \\frac{g x^2}{2 v_0^2 \\cos^2\\theta}",
+    formulaPrimary: "y = x·tan θ − gx² / (2v₀²·cos²θ)",
+    formulaLines: [
+      "Range:   R = v₀²·sin(2θ) / g",
+      "Height:  H = v₀²·sin²θ / (2g)",
+      "Time:    T = 2v₀·sinθ / g"
+    ],
     metrics: [
-      { id: "maxHeight", label: "Max Height (H_max)", unit: "m" },
-      { id: "range", label: "Horizontal Range (R)", unit: "m" },
-      { id: "flightTime", label: "Time of Flight (T)", unit: "s" }
+      { id: "maxHeight", label: "Max Height (H)", unit: "m" },
+      { id: "range", label: "Range (R)", unit: "m" },
+      { id: "flightTime", label: "Flight Time (T)", unit: "s" }
     ],
     parameters: [
       { id: "velocity", label: "Initial Velocity (v₀)", min: 10, max: 100, step: 1, default: 45, unit: "m/s" },
@@ -28,7 +34,12 @@ export const simulationsData = [
     badge: "Oscillations",
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="5" r="2"/><line x1="12" y1="7" x2="16" y2="19"/><circle cx="16" cy="19" r="3"/></svg>`,
     description: "Explore Simple Harmonic Motion with variable pendulum length, gravity, and damping. Observe real-time kinetic and potential energy exchange.",
-    formulaPrimary: "T = 2\\pi \\sqrt{\\frac{L}{g}}, \\quad \\theta(t) = \\theta_0 \\cos(\\omega t)",
+    formulaPrimary: "T = 2π √(L/g)",
+    formulaLines: [
+      "Period:    T = 2π √(L/g)",
+      "Motion:    θ(t) = θ₀ · cos(ωt)",
+      "Frequency: f = 1/T = (1/2π) √(g/L)"
+    ],
     metrics: [
       { id: "period", label: "Time Period (T)", unit: "s" },
       { id: "frequency", label: "Frequency (f)", unit: "Hz" },
@@ -46,7 +57,12 @@ export const simulationsData = [
     badge: "Wave Mechanics",
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12c3-6 6-6 9 0s6 6 9 0"/></svg>`,
     description: "Generate travelling harmonic waves and observe superposition, constructive/destructive interference, and standing wave patterns.",
-    formulaPrimary: "y(x,t) = A_1 \\sin(k_1 x - \\omega_1 t) + A_2 \\sin(k_2 x - \\omega_2 t + \\phi)",
+    formulaPrimary: "y(x,t) = A·sin(kx − ωt + φ)",
+    formulaLines: [
+      "Wave 1:  y₁ = A₁·sin(k₁x − ω₁t)",
+      "Wave 2:  y₂ = A₂·sin(k₂x − ω₂t + φ)",
+      "Result:  y = y₁ + y₂  (Superposition)"
+    ],
     metrics: [
       { id: "wavelength", label: "Wavelength (λ)", unit: "m" },
       { id: "waveSpeed", label: "Wave Speed (v)", unit: "m/s" },
@@ -64,7 +80,12 @@ export const simulationsData = [
     badge: "Astrophysics",
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><ellipse cx="12" cy="12" rx="10" ry="5"/></svg>`,
     description: "Simulate celestial orbits around Earth. Adjust orbital radius to observe orbital speed, Kepler's 3rd Law, and escape velocity boundary.",
-    formulaPrimary: "v_{orb} = \\sqrt{\\frac{G M}{r}}, \\quad T^2 = \\frac{4\\pi^2}{G M} r^3",
+    formulaPrimary: "v_orb = √(GM/r)",
+    formulaLines: [
+      "Orbital speed:  v = √(GM/r)",
+      "Kepler 3rd:     T² = (4π²/GM) · r³",
+      "Escape speed:   v_esc = √(2GM/r)"
+    ],
     metrics: [
       { id: "orbitalSpeed", label: "Orbital Velocity (v)", unit: "km/s" },
       { id: "orbitalPeriod", label: "Period (T)", unit: "min" },
@@ -72,7 +93,7 @@ export const simulationsData = [
     ],
     parameters: [
       { id: "altitude", label: "Altitude above Earth (h)", min: 200, max: 36000, step: 200, default: 1200, unit: "km" },
-      { id: "massScale", label: "Central Body Mass (M)", min: 0.5, max: 3.0, step: 0.1, default: 1.0, unit: "M_Earth" }
+      { id: "massScale", label: "Central Body Mass (M)", min: 0.5, max: 3.0, step: 0.1, default: 1.0, unit: "× M_Earth" }
     ]
   },
   {
@@ -81,7 +102,12 @@ export const simulationsData = [
     badge: "Electrodynamics",
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2v20M2 12h20"/></svg>`,
     description: "Inject charged particles into magnetic and electric fields to observe circular cyclotron orbits and helical deflection trajectories.",
-    formulaPrimary: "\\vec{F} = q(\\vec{E} + \\vec{v} \\times \\vec{B}), \\quad r_{gyro} = \\frac{m v}{q B}",
+    formulaPrimary: "F = q(E + v × B)",
+    formulaLines: [
+      "Lorentz Force:    F = q(E + v × B)",
+      "Cyclotron Radius: r = mv / (qB)",
+      "Cyclotron Freq:   f_c = qB / (2πm)"
+    ],
     metrics: [
       { id: "gyroRadius", label: "Cyclotron Radius (r)", unit: "cm" },
       { id: "cyclotronFreq", label: "Cyclotron Freq (f_c)", unit: "MHz" },
@@ -99,7 +125,12 @@ export const simulationsData = [
     badge: "Thermodynamics",
     icon: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8" cy="8" r="1.5"/><circle cx="15" cy="12" r="1.5"/><circle cx="10" cy="16" r="1.5"/></svg>`,
     description: "Microscopic simulation of elastic molecular collisions inside a container. Adjust temperature and volume to witness real-time pressure changes.",
-    formulaPrimary: "P = \\frac{1}{3} \\frac{N m \\langle v^2 \\rangle}{V} = \\frac{N k_B T}{V}",
+    formulaPrimary: "PV = Nk_B T",
+    formulaLines: [
+      "Ideal Gas:    PV = Nk_B T",
+      "Pressure:     P = (1/3) · Nm⟨v²⟩ / V",
+      "RMS Speed:    v_rms = √(3k_B T / m)"
+    ],
     metrics: [
       { id: "pressure", label: "Pressure (P)", unit: "kPa" },
       { id: "vRms", label: "RMS Speed (v_rms)", unit: "m/s" },

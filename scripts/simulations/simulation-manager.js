@@ -175,6 +175,11 @@ export class SimulationManager {
   renderEquation(simConfig) {
     if (!this.equationContainer) return;
 
+    const lines = simConfig.formulaLines || [];
+    const linesHTML = lines.map(line =>
+      `<div class="equation-calculated" style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--text-secondary); padding: 3px 0; border-bottom: 1px solid var(--border-subtle);">${line}</div>`
+    ).join('');
+
     this.equationContainer.innerHTML = `
       <div class="equation-card">
         <div class="lab-panel-title">
@@ -182,7 +187,8 @@ export class SimulationManager {
           <span>Governing Equation</span>
         </div>
         <div class="equation-formula">${simConfig.formulaPrimary}</div>
-        <p style="font-size: 0.8125rem; color: var(--text-muted); line-height: 1.5; margin: 0;">${simConfig.description}</p>
+        ${linesHTML ? `<div style="display: flex; flex-direction: column; gap: 2px; margin-top: 4px;">${linesHTML}</div>` : ''}
+        <p style="font-size: 0.8125rem; color: var(--text-muted); line-height: 1.5; margin: 6px 0 0;">${simConfig.description}</p>
       </div>
     `;
   }
