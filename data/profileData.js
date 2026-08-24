@@ -2,6 +2,7 @@
  * Profile & Academic Identity Data
  * Muhammad Nawaz Sharif - Lecturer in Physics
  * Govt. Boys Inter College Gamba, Skardu, Gilgit-Baltistan
+ * Domain: https://muhammadnawazsharif.github.io/
  */
 
 export const profileData = {
@@ -19,10 +20,27 @@ export const profileData = {
     department: "Department of Physics"
   },
 
+  education: [
+    {
+      degree: "M.Sc. in Physics",
+      institution: "University of Karachi",
+      location: "Karachi, Pakistan",
+      status: "Completed",
+      badge: "Master's Degree"
+    },
+    {
+      degree: "B.Sc.",
+      institution: "University of the Punjab",
+      location: "Lahore, Pakistan",
+      status: "Completed",
+      badge: "Bachelor's Degree"
+    }
+  ],
+
   about: {
-    lead: "Dedicated physics educator committed to conceptual understanding, Student Learning Outcomes (SLOs), and scientific problem-solving in Gilgit-Baltistan.",
+    lead: "Dedicated physics educator holding an M.Sc. in Physics from the University of Karachi and B.Sc. from the University of the Punjab, committed to conceptual learning, Student Learning Outcomes (SLOs), and scientific problem-solving in Gilgit-Baltistan.",
     paragraphs: [
-      "Muhammad Nawaz Sharif serves as a Lecturer in Physics at Govt. Boys Inter College Gamba, Skardu, Gilgit-Baltistan, Pakistan. With a passion for demystifying complex physical principles, he empowers intermediate and college students to see the beauty and logic of the universe through structured reasoning, intuitive illustrations, and rigorous mathematical formulation.",
+      "Muhammad Nawaz Sharif serves as a Lecturer in Physics at Govt. Boys Inter College Gamba, Skardu, Gilgit-Baltistan, Pakistan. With a solid academic foundation comprising an M.Sc. in Physics from the University of Karachi and a B.Sc. from the University of the Punjab, he is passionately committed to demystifying physical laws and mathematical principles for intermediate and college students.",
       "His educational approach emphasizes moving away from rote memorization toward deep conceptual mastery, visual problem-solving, and comprehensive handwritten study material aligned with modern national curriculum standards and board requirements."
     ],
     journey: [
@@ -67,18 +85,12 @@ export const profileData = {
   highlights: [
     { label: "Designation", value: "Lecturer in Physics", isPlaceholder: false },
     { label: "Institution", value: "Govt. Boys Inter College Gamba", isPlaceholder: false },
-    { label: "Location", value: "Skardu, Gilgit-Baltistan", isPlaceholder: false },
-    { label: "Curriculum Focus", value: "Intermediate (1st & 2nd Year) Physics", isPlaceholder: false }
+    { label: "Master's Degree", value: "M.Sc. Physics (University of Karachi)", isPlaceholder: false },
+    { label: "Bachelor's Degree", value: "B.Sc. (University of the Punjab)", isPlaceholder: false }
   ],
 
   social: {
     facebook: "https://www.facebook.com/nawaz.sharif.79/",
     facebookName: "Muhammad Nawaz Sharif"
-  },
-
-  academicCredentialsPlaceholder: [
-    { label: "Master's Degree", value: "[Add verified qualification here]", isPlaceholder: true },
-    { label: "Specialization", value: "[Add verified specialization here]", isPlaceholder: true },
-    { label: "Professional Certifications", value: "[Add verified certifications here]", isPlaceholder: true }
-  ]
+  }
 };
