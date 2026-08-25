@@ -7,6 +7,7 @@ import { physicsTopics } from '../data/physicsTopics.js';
 import { handwrittenNotes } from '../data/handwrittenNotes.js';
 import { resourcesData } from '../data/resourcesData.js';
 import { articlesData } from '../data/articlesData.js';
+import { galleryData } from '../data/galleryData.js';
 import { studentPortalData } from '../data/studentPortalData.js';
 
 export class GlobalSearch {

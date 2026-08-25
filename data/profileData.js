@@ -9,6 +9,14 @@ export const profileData = {
   name: "Muhammad Nawaz Sharif",
   title: "Lecturer in Physics",
   badge: "PHYSICS EDUCATOR • LECTURER • MENTOR",
+  avatar: "./assets/images/profile/Muhammad-Nawaz-Sharif (1).jpeg",
+  photos: [
+    { src: "./assets/images/profile/Muhammad-Nawaz-Sharif (1).jpeg", caption: "Official Academic Portrait - Lecturer in Physics", category: "Portrait" },
+    { src: "./assets/images/profile/Muhammad-Nawaz-Sharif (2).jpeg", caption: "Faculty & Campus Life - Govt. Boys Inter College Gamba, Skardu", category: "Campus" },
+    { src: "./assets/images/profile/Muhammad-Nawaz-Sharif (4).jpeg", caption: "Cultural Heritage - Skardu, Gilgit-Baltistan", category: "Culture" },
+    { src: "./assets/images/profile/Muhammad-Nawaz-Sharif (3).jpeg", caption: "Educator & Academic Leadership", category: "Academic" },
+    { src: "./assets/images/profile/Muhammad-Nawaz-Sharif (5).jpeg", caption: "Field & Outdoor Mentorship", category: "Field" }
+  ],
   tagline: "Teaching Physics with Clarity, Curiosity & Purpose.",
   statement: "Making Physics understandable, visual, intuitive, and inspiring for the next generation of learners.",
   

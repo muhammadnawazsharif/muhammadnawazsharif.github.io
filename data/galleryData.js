@@ -6,6 +6,46 @@
 
 export const galleryData = [
   {
+    id: "gal-p1",
+    title: "Muhammad Nawaz Sharif — Lecturer in Physics",
+    category: "Educator Profile",
+    type: "image",
+    src: "./assets/images/profile/Muhammad-Nawaz-Sharif (1).jpeg",
+    caption: "Official academic portrait of Muhammad Nawaz Sharif, Lecturer in Physics at Govt. Boys Inter College Gamba, Skardu."
+  },
+  {
+    id: "gal-p2",
+    title: "Faculty & Campus Life in Skardu",
+    category: "Campus & Faculty",
+    type: "image",
+    src: "./assets/images/profile/Muhammad-Nawaz-Sharif (2).jpeg",
+    caption: "With academic colleagues and educators at the college campus in Skardu, Gilgit-Baltistan."
+  },
+  {
+    id: "gal-p4",
+    title: "Cultural Heritage — Skardu, Gilgit-Baltistan",
+    category: "Heritage & Region",
+    type: "image",
+    src: "./assets/images/profile/Muhammad-Nawaz-Sharif (4).jpeg",
+    caption: "In traditional Gilgit-Baltistan cultural attire (Pakol) in the scenic natural landscape of Skardu."
+  },
+  {
+    id: "gal-p3",
+    title: "Academic Focus & Pedagogical Leadership",
+    category: "Educator Profile",
+    type: "image",
+    src: "./assets/images/profile/Muhammad-Nawaz-Sharif (3).jpeg",
+    caption: "Dedicated to conceptual physics learning, student learning outcomes (SLOs), and academic excellence."
+  },
+  {
+    id: "gal-p5",
+    title: "Field Exploration & Science Mentorship",
+    category: "Educator Profile",
+    type: "image",
+    src: "./assets/images/profile/Muhammad-Nawaz-Sharif (5).jpeg",
+    caption: "Engaging students with nature, physical laws in everyday reality, and observational science."
+  },
+  {
     id: "gal-01",
     title: "Handwritten Derivation Series: Gravitation & Satellites",
     category: "Notes & Derivations",
@@ -44,13 +84,5 @@ export const galleryData = [
     type: "image",
     src: "./assets/images/notes/note_variation_of_g_altitude.png",
     caption: "Binomial expansion proof for small altitudes h << R with g vs h asymptotic curve."
-  },
-  {
-    id: "gal-06",
-    title: "Complete 1st Year Physics Comprehensive Notes Volume",
-    category: "Academic Publications",
-    type: "pdf",
-    src: "./assets/documents/Physics_First_Year_Complete_Notes.pdf",
-    caption: "Comprehensive 10-chapter study guide authored for college physics students."
   }
 ];

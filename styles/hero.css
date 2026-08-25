@@ -250,7 +250,12 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 15%;
+  transition: transform 0.5s ease;
+}
+
+.profile-frame:hover .profile-image {
+  transform: scale(1.05);
 }
 
 .profile-fallback-avatar {
