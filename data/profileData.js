@@ -11,11 +11,11 @@ export const profileData = {
   badge: "PHYSICS EDUCATOR • LECTURER • MENTOR",
   avatar: "./assets/images/profile/Muhammad-Nawaz-Sharif (1).jpeg",
   photos: [
-    { src: "./assets/images/profile/Muhammad-Nawaz-Sharif (1).jpeg", caption: "Official Academic Portrait - Lecturer in Physics", category: "Portrait" },
-    { src: "./assets/images/profile/Muhammad-Nawaz-Sharif (2).jpeg", caption: "Faculty & Campus Life - Govt. Boys Inter College Gamba, Skardu", category: "Campus" },
-    { src: "./assets/images/profile/Muhammad-Nawaz-Sharif (4).jpeg", caption: "Cultural Heritage - Skardu, Gilgit-Baltistan", category: "Culture" },
-    { src: "./assets/images/profile/Muhammad-Nawaz-Sharif (3).jpeg", caption: "Educator & Academic Leadership", category: "Academic" },
-    { src: "./assets/images/profile/Muhammad-Nawaz-Sharif (5).jpeg", caption: "Field & Outdoor Mentorship", category: "Field" }
+    { src: "./assets/images/profile/Muhammad-Nawaz-Sharif (1).jpeg", caption: "Official Academic Portrait - Lecturer in Physics", alt: "Official Academic Portrait - Muhammad Nawaz Sharif - Lecturer in Physics", author: "Muhammad Nawaz Sharif - Lecturer in Physics", description: "Official academic portrait of Muhammad Nawaz Sharif, Lecturer in Physics at Govt. Boys Inter College Gamba, Skardu.", category: "Portrait" },
+    { src: "./assets/images/profile/Muhammad-Nawaz-Sharif (2).jpeg", caption: "Faculty & Campus Life - Govt. Boys Inter College Gamba, Skardu", alt: "Faculty & Campus Life - Muhammad Nawaz Sharif - Lecturer in Physics", author: "Muhammad Nawaz Sharif - Lecturer in Physics", description: "Muhammad Nawaz Sharif with faculty members at Govt. Boys Inter College Gamba, Skardu.", category: "Campus" },
+    { src: "./assets/images/profile/Muhammad-Nawaz-Sharif (4).jpeg", caption: "Cultural Heritage - Skardu, Gilgit-Baltistan", alt: "Cultural Heritage Skardu - Muhammad Nawaz Sharif - Lecturer in Physics", author: "Muhammad Nawaz Sharif - Lecturer in Physics", description: "Muhammad Nawaz Sharif representing cultural heritage in Skardu, Gilgit-Baltistan.", category: "Culture" },
+    { src: "./assets/images/profile/Muhammad-Nawaz-Sharif (3).jpeg", caption: "Educator & Academic Leadership", alt: "Academic Leadership - Muhammad Nawaz Sharif - Lecturer in Physics", author: "Muhammad Nawaz Sharif - Lecturer in Physics", description: "Muhammad Nawaz Sharif dedicated to physics education and academic leadership.", category: "Academic" },
+    { src: "./assets/images/profile/Muhammad-Nawaz-Sharif (5).jpeg", caption: "Field & Outdoor Mentorship", alt: "Field Mentorship - Muhammad Nawaz Sharif - Lecturer in Physics", author: "Muhammad Nawaz Sharif - Lecturer in Physics", description: "Muhammad Nawaz Sharif conducting outdoor student science mentorship in Skardu.", category: "Field" }
   ],
   tagline: "Teaching Physics with Clarity, Curiosity & Purpose.",
   statement: "Making Physics understandable, visual, intuitive, and inspiring for the next generation of learners.",
