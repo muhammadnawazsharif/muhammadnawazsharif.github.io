@@ -99,29 +99,40 @@
    Light Theme - Luxury Butter Academic Aesthetic (Warm Butter Parchment & Rich Amber)
    ======================================================================== */
 [data-theme="light"] {
-  --bg-primary: #fbf7ec;       /* Warm Rich Butter Tone */
-  --bg-secondary: #f4ede0;     /* Cream Butter Linen for alternating sections */
-  --bg-tertiary: #ebe1cd;      /* Warm Golden Butter for inputs & badges */
-  --bg-elevated: #fffefb;      /* Pure Butter White for cards & dropdowns */
+  --bg-primary: #fbf7ec;
+  /* Warm Rich Butter Tone */
+  --bg-secondary: #f4ede0;
+  /* Cream Butter Linen for alternating sections */
+  --bg-tertiary: #ebe1cd;
+  /* Warm Golden Butter for inputs & badges */
+  --bg-elevated: #fffefb;
+  /* Pure Butter White for cards & dropdowns */
   --bg-surface-glass: rgba(251, 247, 236, 0.90);
-  --bg-card: #fffdf8;          /* Crisp Butter-White Card */
+  --bg-card: #fffdf8;
+  /* Crisp Butter-White Card */
   --bg-card-hover: #ffffff;
 
   --border-subtle: rgba(180, 140, 50, 0.16);
   --border-medium: rgba(180, 140, 50, 0.28);
-  --border-focus: #d97706;     /* Rich Amber Gold */
+  --border-focus: #d97706;
+  /* Rich Amber Gold */
   --border-glass: rgba(217, 119, 6, 0.32);
 
-  --text-primary: #1c1917;     /* Deep Slate-Espresso (100% WCAG AAA contrast) */
-  --text-secondary: #44403c;   /* Charcoal Warm Stone */
-  --text-muted: #78716c;       /* Muted Stone */
-  --text-accent: #0369a1;      /* Deep Academic Sapphire */
+  --text-primary: #1c1917;
+  /* Deep Slate-Espresso (100% WCAG AAA contrast) */
+  --text-secondary: #44403c;
+  /* Charcoal Warm Stone */
+  --text-muted: #78716c;
+  /* Muted Stone */
+  --text-accent: #0369a1;
+  /* Deep Academic Sapphire */
 
   --accent-electric: #1d4ed8;
   --accent-cyan: #0284c7;
   --accent-cyan-glow: rgba(2, 132, 199, 0.18);
   --accent-blue-glow: rgba(29, 78, 216, 0.18);
-  --accent-gold: #b45309;      /* Warm Golden Amber */
+  --accent-gold: #b45309;
+  /* Warm Golden Amber */
   --accent-gold-glow: rgba(217, 119, 6, 0.22);
   --accent-emerald: #047857;
   --accent-purple: #7e22ce;
